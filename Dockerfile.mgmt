@@ -1,0 +1,12 @@
+FROM php:8.2-apache
+RUN apt-get update && apt-get install -y \
+    npm \
+    git \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+COPY --from=ghcr.io/composer/docker /usr/bin/composer /usr/bin/composer
+WORKDIR /var/www/html
+COPY wwwmgmt /var/www/html/
+RUN composer require jumbojett/openid-connect-php
+ENV PHP_ENV=production
+EXPOSE 80

@@ -1,0 +1,12 @@
+<?php
+return [
+    'client_id' => 'CLIENTID',
+    'client_secret' => 'CLIENTSECRET',
+    'redirect_uri' => 'https://mgmt.pad.example.org/index.php',
+    'oidc_url' => 'https://login.pad.example.org/application/o/pad-mgmt/',
+    'api_url' => 'https://login.pad.example.org/api/v3/stages/invitation/invitations/',
+    'api_key' => 'AuthentikAPIKey',
+    'flow_id' => 'external-flow-id',
+    'product_name' => 'pad.example.org',
+    'invite_url' => 'https://login.pad.example.org/if/flow/invite/?itoken='
+];

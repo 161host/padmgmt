@@ -1,0 +1,14 @@
+FROM php:8.2-apache
+RUN apt-get update && apt-get install -y \
+    npm \
+    git \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+COPY --from=ghcr.io/composer/docker /usr/bin/composer /usr/bin/composer
+WORKDIR /var/www/html
+COPY wwwsignup /var/www/html/
+RUN chown 33:33 /var/www/html -R
+RUN composer require phpmailer/phpmailer
+RUN echo "0 0 * * * /usr/local/bin/php /var/www/html/cron.php" > /etc/crontab
+ENV PHP_ENV=production
+EXPOSE 80

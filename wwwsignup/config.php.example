@@ -1,0 +1,30 @@
+<?php
+return [
+    'product_name' => 'pad.example.org',
+    'smtp_host' => 'mx.example.org',
+    'smtp_user' => 'foo',
+    'smtp_pass' => 'bar',
+    'smtp_port' => 587,
+    'smtp_secure' => 'tls',
+
+    'from_email' => 'no-reply@example.org',
+    'from_name' => 'pad.example.org',
+
+    'base_url' => 'https://signup.pad.example.org',
+    'admin_secret' => 'foobar',
+    'telegram_bot_token' => '123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+    'telegram_chat_id' => '1234567890',
+
+    'data_file' => '/var/www/data/requests.json',
+    'reject_file' => '/var/www/data/rejects.csv',
+    'api_key' => 'AuthentikAPIKey',
+    'flow_id' => 'flow-external-id',
+    'group_flow_id' => 'flow-internal-id',
+
+    'flow_name' => 'flow-external-name',
+    'group_flow_name' => 'flow-internal-name',
+    'invite_url' => 'https://login.pad.example.org/if/flow/',
+    'api_url' => 'https://login.pad.example.org/api/v3/stages/invitation/invitations/',
+    'mgmt_url' => 'https://mgmt.pad.example.org/',
+    'legal' => 'https://legal.example.org'
+];

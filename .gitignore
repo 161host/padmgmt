@@ -1,0 +1,10 @@
+signupdata/
+wwwmgmt/vendor/
+wwwmgmt/config.php
+wwwsignup/config.php
+.env
+wwwmgmt.dev/
+wwwsignup.dev/
+Dockerfile.mgmt.dev
+Dockerfile.signup.dev
+.vscode

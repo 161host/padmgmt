@@ -1,0 +1,15 @@
+services:
+  mgmt:
+    image: ghcr.io/161host/pad-mgmt:main
+    env_file:
+      - .env
+    ports:
+      - 9123:80
+  signup:
+    image: ghcr.io/161host/pad-signup:main
+    volumes:
+      - ./signupdata:/var/www/data
+    env_file:
+      - .env
+    ports:
+      - 9124:80
