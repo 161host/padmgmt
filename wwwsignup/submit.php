@@ -1,11 +1,13 @@
+<?php
+require 'mailer.php';
+$config = require 'config.php';
+?>
 <html>
 <head>
 <title>Anfrage - <?= $config['product_name'] ?></title>
 </head>
 <body>
 <?php
-require 'mailer.php';
-$config = require 'config.php';
 
 $dataFile = $config['data_file'];
 $data = file_exists($dataFile) ? json_decode(file_get_contents($dataFile), true) : [];

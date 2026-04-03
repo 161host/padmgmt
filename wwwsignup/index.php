@@ -1,3 +1,6 @@
+<?php
+$config = require 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
