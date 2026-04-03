@@ -1,7 +1,5 @@
 signupdata/
 wwwmgmt/vendor/
-wwwmgmt/config.php
-wwwsignup/config.php
 .env
 wwwmgmt.dev/
 wwwsignup.dev/
